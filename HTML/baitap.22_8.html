@@ -2,46 +2,55 @@
 <html>
 <head>
 <style>
-table, th, td {
-  border: 1px solid black;
+table {
   border-collapse: collapse;
+  width: 100%;
 }
+
 th, td {
-  padding-top: 15px;
-  padding-bottom: 15px;
-  padding-left: 30px;
-  padding-right: 40px;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #D6EEEE;
 }
 </style>
 </head>
 <body>
 
-<h2>Cellpadding - top - bottom - left - right </h2>
-<p>Nguyen Hong Ha.</p>
+<h2>Zebra Striped Table</h2>
+<p>For zebra-striped tables, use the nth-child() selector and add a background-color to all even (or odd) table rows:</p>
 
-<table style="width:100%">
+<table>
   <tr>
-    <th>Firstname</th>
-    <th>Lastname</th> 
-    <th>Age</th>
+  <th>Họ đệm</th>
+  <th>tên</th>
+  <th>Points</th>
   </tr>
   <tr>
-    <td>Jill</td>
-    <td>Smith</td>
-    <td>50</td>
+  <td>Nguyễn Hồng </td>
+  <td>Hà</td>
+  <td>$100</td>
   </tr>
   <tr>
-    <td>Eve</td>
-    <td>Jackson</td>
-    <td>94</td>
+  <td>Lois</td>
+  <td>Griffin</td>
+  <td>$150</td>
   </tr>
   <tr>
-    <td>John</td>
-    <td>Doe</td>
-    <td>80</td>
+  <td>Joe</td>
+  <td>Swanson</td>
+  <td>$300</td>
+  </tr>
+  <tr>
+  <td>Cleveland</td>
+  <td>Brown</td>
+  <td>$250</td>
   </tr>
 </table>
 
 </body>
 </html>
+
 
