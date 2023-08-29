@@ -1,67 +1,25 @@
-<!DOCTYPE html>
-<html lang="vi">
-
-<head>
-    <h1 style="font-size:50px;" <p><a href="https://humg.edu.vn/gioi-thieu/co-cau-to-chuc/cac-khoa/Pages/khoa-cong-nghe-thong-tin.aspx/">Khoa CNTT HUMG</a></p></h1></h1>
-
-
-
-<style>
-  table, th, td {
-    border: 1px solid white;
-    border-collapse: collapse;
-  }
-  th, td {
-    background-color: #4ed9d9;
-  }
-  </style>
-  </head>
-  <body>
-  
-  <center><B>Depanments</B></center>
-  
-  <table style="width:100%">
-    <tr>
-      <th>STT</th>
-      <th>Depanments</th> 
-      <th>Aderess</th>
-      <th>Phone</th>
-      <th>Email</th>
-    </tr>
-    <tr>
-      <td>1</td>
-      <td><a href="https://humg.edu.vn/gioi-thieu/co-cau-to-chuc/cac-khoa/Pages/khoa-cong-nghe-thong-tin.aspx?CateID=101">Tin học trắc địa</a></td>
-      <td> 709 nhà 12 tầng</td>
-      <td>09099999999</td>
-      <td>tinhoctracdia@humg.edu.vn</td>
-    </tr>
-    <tr>
-      <td>1</td>
-      <td><a href="https://humg.edu.vn/gioi-thieu/co-cau-to-chuc/cac-khoa/Pages/khoa-cong-nghe-thong-tin.aspx?CateID=96">CNPM</a></td>
-      <td>709 nhà 12 tầng</td>
-      <td>09099999999</td>
-      <td>cmpm@humg.edu.vn</td>
-    <tr>
-      <td>1</td>
-      <td><a href="https://humg.edu.vn/gioi-thieu/co-cau-to-chuc/cac-khoa/Pages/khoa-cong-nghe-thong-tin.aspx?CateID=77">Tin học kinh tế</a></td>
-      <td>709 nhà 12 tầng</td>
-      <td>09095555555555</td>
-      <td>thkt@humg.edu.vn</td>
-    </tr>
+<html>
+    <head>
+        <meta charset="utf-8">
+    </head>
+    <body>
     
-  </table>
-  
-  <h2>Chuyên ngành trong khoa</h2>
+        <form method="POST" action="authenticate.php">
+            <div>
+                <label for="id">User name:</label>
+                <input id="id" type="text" name="id" value="">
+            </div>
 
-  <ul>
-    <li>CNTT Địa học</li>
-    <li>CMPM</li>
-    <li>THKT</li>
-    <li>KHMT</li>
-    <li>HTTT</li>
-  </ul>
-  <h2>Trang wed này của Hà</h2>
-  <img src="https://mof.com.vn/wp-content/uploads/anh-meme-hai-thay-huan.jpg" alt="Trulli" width="500" height="333">
-
-  
-  
+            <div>
+                <label for="password">Password:</label>
+                <input id="password" type="password" name="password" value="">
+            </div>
+            <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+  <label for="vehicle1"> Remember me</label><br>
+            <div>
+                <input type="submit" value="Đăng nhập">
+                
+            </div>
+        </form>
+    </body>
+</html>
