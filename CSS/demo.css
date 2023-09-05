@@ -2,14 +2,14 @@
 <html>
 <body>
 
-<h1>Specify colors using HEX values</h1>
+<h1>Specify colors using HSL values</h1>
 
-<h2 style="background-color:#ff0000;">#ff0000</h2>
-<h2 style="background-color:#0000ff;">#0000ff</h2>
-<h2 style="background-color:#3cb371;">#3cb371</h2>
-<h2 style="background-color:#ee82ee;">#ee82ee</h2>
-<h2 style="background-color:#ffa500;">#ffa500</h2>
-<h2 style="background-color:#6a5acd;">#6a5acd</h2>
+<h2 style="background-color:hsl(0, 0%, 50%);">hsl(0, 100%, 50%)</h2>
+<h2 style="background-color:hsl(240, 100%, 50%);">hsl(240, 100%, 50%)</h2>
+<h2 style="background-color:hsl(147, 50%, 47%);">hsl(147, 50%, 47%)</h2>
+<h2 style="background-color:hsl(300, 76%, 72%);">hsl(300, 76%, 72%)</h2>
+<h2 style="background-color:hsl(39, 100%, 50%);">hsl(39, 100%, 50%)</h2>
+<h2 style="background-color:hsl(248, 53%, 58%);">hsl(248, 53%, 58%)</h2>
 
 </body>
 </html>
@@ -17,19 +17,19 @@
 
 
 
+
+
 /*Nguyễn Hồng Hà  
-/*  giá trị màu trong css Giá trị HEX
-Trong CSS, một màu có thể được chỉ định bằng giá trị thập lục phân ở dạng:
+/*  Giá trị HSL
+Trong CSS, một màu có thể được chỉ định bằng cách sử dụng màu sắc, độ bão hòa và độ sáng (HSL) ở dạng:
 
-#rrggbb _
+hsl( màu sắc , độ bão hòa , độ sáng )
 
-Trong đó rr (đỏ), gg (xanh lục) và bb (xanh lam) là các giá trị thập lục phân từ 00 đến ff (giống như số thập phân 0-255).
+Hue là một độ trên bánh xe màu từ 0 đến 360. 0 là đỏ, 120 là xanh lục và 240 là xanh lam.
 
-Ví dụ: #ff0000 được hiển thị dưới dạng màu đỏ, vì màu đỏ được đặt ở giá trị cao nhất (ff) và các giá trị khác được đặt ở giá trị thấp nhất (00).
+Độ bão hòa là một giá trị phần trăm. 0% có nghĩa là màu xám và 100% là màu đầy đủ.
 
-Để hiển thị màu đen, đặt tất cả các giá trị thành 00, như sau: #000000.
-
-Để hiển thị màu trắng, đặt tất cả các giá trị thành ff, như sau: #ffffff.*/
+Độ nhẹ cũng là một tỷ lệ phần trăm. 0% là màu đen, 50% không sáng cũng không tối, 100% là màu trắng.*/
 
 
 
