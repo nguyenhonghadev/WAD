@@ -1,26 +1,14 @@
-<!DOCTYPE html>
-<htm lang="en" dir="ltr">
-<head>
-<meta charset="utf-8">
-<title> My wedsite </title>
-<style>
+body {
+  background-color: lightblue;
+}
+
 h1 {
-  color: maroon;
+  color: white;
   text-align: center;
+}
 
+p {
+  font-family: verdana;
+  font-size: 20px;
 }
-table, td , th {
-  background-color: lightgreen;
-  border: 2px; solid black;
-}
-ing {
-  width: 500px;
-  height: 500px;
-
-}
-ul li {
-  color:blue;
-}
-</style>
-</head>
-<head>
+/*Nguyễn Hồng Hà 
