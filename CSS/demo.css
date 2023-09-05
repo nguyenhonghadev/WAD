@@ -1,4 +1,5 @@
 body {
-  background-image: url("paper.gif");
+  background-image: url("gradient_bg.png");
 }
 /*Nguyễn Hồng Hà  
+/*Theo mặc định, background-imagethuộc tính này lặp lại hình ảnh theo cả chiều ngang và chiều dọc.
