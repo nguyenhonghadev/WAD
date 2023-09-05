@@ -2,19 +2,34 @@
 <html>
 <body>
 
-<h1>Specify colors using RGB values</h1>
+<h1>Specify colors using HEX values</h1>
 
-<h2 style="background-color:rgb(255, 0, 0);">rgb(255, 0, 0)</h2>
-<h2 style="background-color:rgb(0, 0, 255);">rgb(0, 0, 255)</h2>
-<h2 style="background-color:rgb(60, 179, 113);">rgb(60, 179, 113)</h2>
-<h2 style="background-color:rgb(238, 130, 238);">rgb(238, 130, 238)</h2>
-<h2 style="background-color:rgb(255, 165, 0);">rgb(255, 165, 0)</h2>
-<h2 style="background-color:rgb(106, 90, 205);">rgb(106, 90, 205)</h2>
+<h2 style="background-color:#ff0000;">#ff0000</h2>
+<h2 style="background-color:#0000ff;">#0000ff</h2>
+<h2 style="background-color:#3cb371;">#3cb371</h2>
+<h2 style="background-color:#ee82ee;">#ee82ee</h2>
+<h2 style="background-color:#ffa500;">#ffa500</h2>
+<h2 style="background-color:#6a5acd;">#6a5acd</h2>
 
 </body>
 </html>
 
 
 
+
 /*Nguyễn Hồng Hà  
-/*  giá trị màu trong css
+/*  giá trị màu trong css Giá trị HEX
+Trong CSS, một màu có thể được chỉ định bằng giá trị thập lục phân ở dạng:
+
+#rrggbb _
+
+Trong đó rr (đỏ), gg (xanh lục) và bb (xanh lam) là các giá trị thập lục phân từ 00 đến ff (giống như số thập phân 0-255).
+
+Ví dụ: #ff0000 được hiển thị dưới dạng màu đỏ, vì màu đỏ được đặt ở giá trị cao nhất (ff) và các giá trị khác được đặt ở giá trị thấp nhất (00).
+
+Để hiển thị màu đen, đặt tất cả các giá trị thành 00, như sau: #000000.
+
+Để hiển thị màu trắng, đặt tất cả các giá trị thành ff, như sau: #ffffff.*/
+
+
+
