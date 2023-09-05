@@ -1,5 +1,14 @@
-p {
-  text-align: center;
-  color: red;
-}
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="mystyle.css">
+</head>
+<body>
+
+<h1>This is a heading</h1>
+<p>This is a paragraph.</p>
+
+</body>
+</html>
 /*Nguyễn Hồng Hà  
+/*Khi trình duyệt đọc một style sheet, nó sẽ định dạng tài liệu HTML theo thông tin trong style sheet.
