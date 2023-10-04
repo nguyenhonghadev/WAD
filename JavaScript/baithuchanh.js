@@ -4,8 +4,9 @@
     <tile>1st JavaScript</tile>
     <script>
         //hàm hiển thị alert
+
         function hello() {
-        alert(welcome to JS by Nguyen Hong Ha);
+        document.querySelector('h1').innerHTML ='2nd JavaScript !';
             
         }
         
