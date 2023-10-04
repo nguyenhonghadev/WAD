@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+/*<!DOCTYPE html>
 <html>
  <head>
     <tile>1st JavaScript</tile>
@@ -19,3 +19,12 @@
 </body>  
 </html>
 
+//IF
+*/
+function count{
+    counter++;
+    document.querySelector('#counter').innerHTML = counter;
+    if (counter % 10 === 0){
+        alert('counter is at ${counter}!')
+    }
+}
