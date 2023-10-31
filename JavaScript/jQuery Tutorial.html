@@ -1,3 +1,21 @@
+    <!--Cú pháp jQuery
+Cú pháp jQuery được thiết kế riêng để chọn các phần tử HTML và thực hiện một số hành động trên (các) phần tử đó.
+
+Cú pháp cơ bản là: $( selector ). hành động ()
+
+Dấu $ để xác định/truy cập jQuery
+A ( bộ chọn ) để "truy vấn (hoặc tìm)" các phần tử HTML
+Một hành động jQuery () được thực hiện trên (các) phần tử
+Ví dụ:
+
+$(this).hide()- ẩn phần tử hiện tại.
+
+$("p").hide()- ẩn tất cả phần tử <p>.
+
+$(".test").hide()- ẩn tất cả các phần tử có class="test".
+
+$("#test").hide()- ẩn phần tử có id="test".-->
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -12,12 +30,12 @@ $(document).ready(function(){
 </head>
 <body>
 
-<h2>Nguyễn Hồng Hà</h2>
+<h2>This is a heading</h2>
 
-<p>usname.</p>
-<p>password.</p>
+<p>This is a paragraph.</p>
+<p>This is another paragraph.</p>
 
-<button>Click me</button>
+<button>Click me to hide paragraphs</button>
 
 </body>
 </html>
