@@ -5,108 +5,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nguyễn Hồng Hà</title>
-    <style>
-      
-    </style>
 </head>
 
 <body>
-    <form>
-                <label>Họ Tên(*)</label>
-                <input type="text" name="hoten" id="hoten" required/>
-            </div>
-            <div style="margin-left: 15px;margin-top: 20px;">
-                <label>Tên Đăng Nhập(*)</label>
-                <input type="text" name="username" id="username" required/>
-            </div>
-            <div style="margin-left: 15px;margin-top: 20px;">
-                <label>Password(*)</label>
-                <input type="password" name="password" minlength="8" id="pw" required/>
-            </div>
-            <div style="margin-left: 15px;margin-top: 20px;">
-                <label> Nhập lại Password(*)</label>
-                <input type="password" name="password" minlength="8" id="rpw" required/>
-                <p id="remote" style="margin-top: 0px;"></p>
-            </div>
-            <div style="margin-left: 15px;margin-top: 0px;">
-                <label>Quốc tịch(*)</label>
-                <select id="national">
-          <option value="option1">Việt Nam</option>
-          <option value="option2">Trung Quốc</option>
-          <option value="option3">Nga</option>
-          <option value="option4">Hoa Kì</option>
-          <option value="option5">Nhật Bản</option>
-        </select>
-            </div>
-            <div style="margin-left: 15px;margin-top: 20px;">
-                <label>Email(*)</label>
-                <input type="email" name="email" id="email" required/>
-            </div>
-            <div style="margin-left: 15px;margin-top: 20px;">
-                <label>Số điện thoại(*)</label>
-                <input type="text" name="phone_number" id="sdt" required/>
-            </div>
-            <div style="margin-left: 15px;margin-top: 20px;">
-                <label> Câu hỏi bảo mật</label>
-                <select>
-          <option value="option1">Cấp 1 bạn học trường nào?</option>
-          <option value="option2">Món ăn bạn yêu thích là gì?</option>
-          <option value="option3">Ước mơ của bạn là gì?</option>
-      
-        </select>
-            </div>
-            <div style="margin-left: 15px;margin-top: 20px;">
-                <label>Trả lời(*)</label>
-                <input type="text" name="answer" id="answer" required/>
-            </div>
-            <div style="margin-left: 10px; margin-top: 10px;">
-                <button> Kiểm tra </button>
-                <button type="submit" onclick="check()">Đăng Kí</button>
-            </div>
-
-        </div>
+    <h1> Task</h1>
+    <ul id="content">
+    </ul>
+    <form action="" id="infor">
+        <input type="text" id="new-content" placeholder="New Task" autocomplete="off" autofocus>
+        <input type="submit" id="submiting">
     </form>
-    <script>
-        var password = document.getElementById('pw');
-        var confirmPassword = document.getElementById('rpw');
-        var remote = document.getElementById('remote');
-        var pw1 = password.value;
-        var pw2 = confirmPassword.value;
 
-        function confirmpw() {
-            var pw1 = password.value;
-            var pw2 = confirmPassword.value;
-
-            if (pw1 === pw2) {
-                remote.innerHTML = 'Mật Khẩu trùng nhau!';
-                remote.style = 'color :green';
-            } else {
-                remote.innerHTML = 'Mật Khẩu Không Khớp!';
-                remote.style = 'color :red';
-            }
-        }
-        confirmPassword.addEventListener('input', confirmpw)
-
-        function check() {
-            var password = document.getElementById('pw').value;
-            var repassword = document.getElementById('rpw').value;
-            var hoten = document.getElementById('hoten').value;
-            var username = document.getElementById('username').value;
-            var emeo = document.getElementById('email').value;
-            var sdt = document.getElementById('sdt').value;
-            var traloi = document.getElementById('answer').value;
-
-            if (password.value === '' || hoten === '' || username === '' || emeo === '' || sdt === '' || traloi === '') {
-                alert('Vui lòng điền đầy đủ thông tin.');
-            }
-            if (password != repassword) {
-                alert('Bạn nhập mật khẩu không khớp')
-            } else {
-                alert('Xin chào bạn ' + hoten + '!');
-            }
-        }
-    </script>
 
 </body>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        document.querySelector('#submiting').disabled = true;
+        document.querySelector('#new-content').onkeyup = function() {
+            document.querySelector('#submiting').disabled = false;
+        }
+        document.querySelector('#infor').onsubmit = function() {
+            const li = document.createElement('li');
+            li.innerHTML = document.querySelector("#new-content").value;
+            document.querySelector('#content').append(li);
+            document.querySelector('#new-content').value = "";
+            document.querySelector('#submiting').disabled = true;
+            return false;
+        }
+    });
+</script>
 
 </html>
