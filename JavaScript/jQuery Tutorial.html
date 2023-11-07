@@ -1,12 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-<h1> Nguyễn Hồng Hà</h1>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 <script>
 $(document).ready(function(){
   $("button").click(function(){
-    $("#div1").remove();
+    $("#div1").empty();
   });
 });
 </script>
@@ -22,7 +21,7 @@ This is some text in the div.
 </div>
 <br>
 
-<button>Remove div element</button>
+<button>Empty the div element</button>
 
 </body>
 </html>
