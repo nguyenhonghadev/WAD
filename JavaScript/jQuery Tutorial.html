@@ -5,11 +5,10 @@
 <script>
 $(document).ready(function(){
   $("#btn1").click(function(){
-    $("p").append(" <b>Nguyễn Hồng Hà</b>.");
+    $("p").prepend("<b>Prepended text</b>. ");
   });
-
   $("#btn2").click(function(){
-    $("ol").append("<li>Vippo</li>");
+    $("ol").prepend("<li>Prepended item</li>");
   });
 });
 </script>
@@ -20,13 +19,13 @@ $(document).ready(function(){
 <p>This is another paragraph.</p>
 
 <ol>
-  <li>Nguyễn Hồng Hà</li>
+  <li>List item 1</li>
   <li>List item 2</li>
   <li>List item 3</li>
 </ol>
 
-<button id="btn1">Nguyễn Hồng Hà</button>
-<button id="btn2">Vippro</button>
+<button id="btn1">Prepend text</button>
+<button id="btn2">Prepend list item</button>
 
 </body>
 </html>
