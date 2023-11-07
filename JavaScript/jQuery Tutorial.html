@@ -13,13 +13,12 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 <script>
 $(document).ready(function(){
-  $("span").parent().css({"color": "red", "border": "2px solid red"});
+  $("span").parents().css({"color": "red", "border": "2px solid red"});
 });
 </script>
 </head>
-<body>
 
-<div class="ancestors">
+<body class="ancestors">body (great-great-grandparent)
   <div style="width:500px;">div (great-grandparent)
     <ul>ul (grandparent)  
       <li>li (direct parent)
@@ -27,13 +26,7 @@ $(document).ready(function(){
       </li>
     </ul>   
   </div>
-
-  <div style="width:500px;">div (grandparent)   
-    <p>p (direct parent)
-      <span>span</span>
-    </p> 
-  </div>
-</div>
-
 </body>
+
+<!-- The outer red border, before the body element, is the html element (also an ancestor) -->
 </html>
