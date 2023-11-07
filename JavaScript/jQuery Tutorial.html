@@ -1,23 +1,39 @@
 <!DOCTYPE html>
 <html>
 <head>
+<style>
+.ancestors * { 
+  display: block;
+  border: 2px solid lightgrey;
+  color: lightgrey;
+  padding: 5px;
+  margin: 15px;
+}
+</style>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 <script>
 $(document).ready(function(){
-  $("button").click(function(){
-    var txt = "";
-    txt += "Document width/height: " + $(document).width();
-    txt += "x" + $(document).height() + "\n";
-    txt += "Window width/height: " + $(window).width();
-    txt += "x" + $(window).height();
-    alert(txt);
-  });
+  $("span").parent().css({"color": "red", "border": "2px solid red"});
 });
 </script>
 </head>
 <body>
 
-<button>Display dimensions of document and window</button>
+<div class="ancestors">
+  <div style="width:500px;">div (great-grandparent)
+    <ul>ul (grandparent)  
+      <li>li (direct parent)
+        <span>span</span>
+      </li>
+    </ul>   
+  </div>
+
+  <div style="width:500px;">div (grandparent)   
+    <p>p (direct parent)
+      <span>span</span>
+    </p> 
+  </div>
+</div>
 
 </body>
 </html>
