@@ -4,21 +4,29 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 <script>
 $(document).ready(function(){
-  $("button").click(function(){
-    $("#w3s").attr("href", function(i, origValue){
-      return origValue + "/jquery/"; 
-    });
-  }); 
+  $("#btn1").click(function(){
+    $("p").append(" <b>Nguyễn Hồng Hà</b>.");
+  });
+
+  $("#btn2").click(function(){
+    $("ol").append("<li>Vippo</li>");
+  });
 });
 </script>
 </head>
 <body>
 
-<p><a href="https://www.w3schools.com" id="w3s">W3Schools.com</a></p>
+<p>This is a paragraph.</p>
+<p>This is another paragraph.</p>
 
-<button>Change href Value</button>
+<ol>
+  <li>Nguyễn Hồng Hà</li>
+  <li>List item 2</li>
+  <li>List item 3</li>
+</ol>
 
-<p>Mouse over the link (or click on it) to see that the value of the href attribute has changed.</p>
+<button id="btn1">Nguyễn Hồng Hà</button>
+<button id="btn2">Vippro</button>
 
 </body>
 </html>
