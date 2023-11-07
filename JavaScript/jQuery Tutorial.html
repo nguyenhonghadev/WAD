@@ -4,32 +4,17 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 <script>
 $(document).ready(function(){
-  $("div").first().css("background-color", "yellow");
+  $("button").click(function(){
+    $("#div1").load("demo_test.txt");
+  });
 });
 </script>
 </head>
 <body>
 
-<h1>Welcome to My Homepage</h1>
+<div id="div1"><h2>Let jQuery AJAX Change This Text</h2></div>
 
-<p>This is a paragraph.</p>
-
-<div style="border: 1px solid black;">
-  <p>A paragraph in a div.</p>
-  <p>Another paragraph in a div.</p>
-</div>
-<br>
-
-<div style="border: 1px solid black;">
-  <p>A paragraph in another div.</p>
-  <p>Another paragraph in another div.</p>
-</div>
-<br>
-
-<div style="border: 1px solid black;">
-  <p>A paragraph in another div.</p>
-  <p>Another paragraph in another div.</p>
-</div>
+<button>Get External Content</button>
 
 </body>
 </html>
