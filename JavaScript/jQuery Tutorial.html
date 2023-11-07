@@ -5,18 +5,16 @@
 <script>
 $(document).ready(function(){
   $("button").click(function(){
-    $("p").hide("slow", function(){
-      alert("Thông báo Gọi lại dòng này trên thanh thông báo");
-    });
+    $("#p1").css("color", "red").slideUp(2000).slideDown(2000);
   });
 });
 </script>
 </head>
 <body>
 
-<button>Hide</button>
+<p id="p1">jQuery is fun!!</p>
 
-<p>Gọi lại dòng này trên cửa sổ thông báo .</p>
+<button>Click me</button>
 
 </body>
 </html>
