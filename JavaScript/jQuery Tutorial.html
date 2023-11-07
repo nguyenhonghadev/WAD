@@ -3,29 +3,19 @@
 <head>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 <script>
-$(document).ready(function(){
-  $("#btn1").click(function(){
-    $("p").prepend("<b>Prepended text</b>. ");
-  });
-  $("#btn2").click(function(){
-    $("ol").prepend("<li>Prepended item</li>");
-  });
-});
+function appendText() {
+  var txt1 = "<p>Nguyễn .</p>";        // Create text with HTML
+  var txt2 = $("<p></p>").text("Hồng.");  // Create text with jQuery
+  var txt3 = document.createElement("p");
+  txt3.innerHTML = "Hà.";         // Create text with DOM
+  $("body").append(txt1, txt2, txt3);   // Append new elements
+}
 </script>
 </head>
 <body>
 
 <p>This is a paragraph.</p>
-<p>This is another paragraph.</p>
-
-<ol>
-  <li>List item 1</li>
-  <li>List item 2</li>
-  <li>List item 3</li>
-</ol>
-
-<button id="btn1">Prepend text</button>
-<button id="btn2">Prepend list item</button>
+<button onclick="appendText()">Append text</button>
 
 </body>
 </html>
