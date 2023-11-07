@@ -7,11 +7,14 @@ $(document).ready(function(){
   $("button").click(function(){
     var txt = "";
     txt += "Width of div: " + $("#div1").width() + "</br>";
-    txt += "Height of div: " + $("#div1").height();
+    txt += "Height of div: " + $("#div1").height() + "</br>";
+    txt += "Inner width of div: " + $("#div1").innerWidth() + "</br>";
+    txt += "Inner height of div: " + $("#div1").innerHeight();
     $("#div1").html(txt);
   });
 });
 </script>
+</head>
 <style>
 #div1 {
   height: 100px;
@@ -22,7 +25,6 @@ $(document).ready(function(){
   background-color: lightblue;
 }
 </style>
-</head>
 <body>
 
 <div id="div1"></div>
@@ -30,10 +32,9 @@ $(document).ready(function(){
 
 <button>Display dimensions of div</button>
 
-<p>width() - returns the width of an element.</p>
-<p>height() - returns the height of an element.</p>
-<p>jQuery Dimensions Nguyễn Hồng Hà.</p>
-
+<p>innerWidth() - returns the width of an element (includes padding).</p>
+<p>innerHeight() - returns the height of an element (includes padding).</p>
+<p> Nguyễn Hồng Hà </p>
 
 </body>
 </html>
