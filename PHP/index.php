@@ -7,12 +7,11 @@
 </head>
 <body>
    <?php 
-   echo "MY FIRT HTML";
-   ?>
-<h3>  Hello Word </h3>
-<select>
-    <option  valua="1">1</option>
-    <option  valua="2">2</option>
-</select>
+  $longAccount = 10.000.000;
+  echo "số tien trong tai khoan Long : $longAccount";
+  echo "HUMG chuyen tien : $HUMGPAy";
+  $longAccount = $longAccount + $HUMGPAy;
+  echo "số tiền trong tài khoản long : $longAccount";
+  ?>
 </body>
 </html>
