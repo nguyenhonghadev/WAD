@@ -9,38 +9,17 @@
 <html>
 
 <head>
-    <title>Nhập số</title>
+    <title>Tìm chữ h</title>
 </head>
 
 <body>
-    <?php
-$a = intval($_POST["a"]);
-$b = intval($_POST["b"]);
-$c = intval($_POST["c"]);
-if ($a == 0){
-    echo "Phương trình không phải là phương trình bậc 2.";
-} else {
-    $delta = pow($b, 2) - 4 * $a * $c;
-    if ($a == 0 && $delta == 0){
-        echo "Phương trình có một nghiệm kép là: x = 0";
-    } elseif ($a == 0){
-        echo "Phương trình vô nghiệm";
-    } else {
-        if ($delta > 0) {
-            $x1 = (-$b + sqrt($delta)) / (2 * $a);
-            $x2 = (-$b - sqrt($delta)) / (2 * $a);
-            echo "Phương trình có hai nghiệm phân biệt là: x1 = $x1 và x2 = $x2";
-        } elseif ($delta == 0) {
-            $x = -$b / (2 * $a);
-            echo "Phương trình có một nghiệm kép là: x = $x";
-        } else {
-            echo "Phương trình vô nghiệm";
-        }
-    }
-}
+<?php 
+$name=" Chúng tôi là sinh viên trường đại học mở địa chất";
+$temp = substr_count($name ,"h");
+echo $name;
+echo"<br>Có  " . $temp . " chữ h xuất hiện trong chuỗi trên";
 
 ?>
-
 </html>
 </body>
 
