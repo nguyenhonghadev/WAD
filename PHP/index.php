@@ -8,27 +8,45 @@
 <body>
     <form action="index.php" method="GET">
         <div>
-        Nhập vào cạnh của tứ giác:<br>
+        Nhập Số a:<br>
         <input type="number" name="a"><br>
-        Nhập vào cạnh còn lại của tứ giác:<br>
+        Nhập Số b:<br>
         <input type="number" name="b"><br>
+        Nhập Số c:<br>
+        <input type="number" name="c"><br>
         <input type="submit" value="Gửi">
     </form>
 
         </div>
     </form>
     <?php
-    if(isset($_GET['a']) && isset($_GET['b']))
-    { 
-    $canh1 =(float) $_GET["a"];
-    $canh2 =(float) $_GET["b"];
-    if ($canh1 ==$canh2) {
-        echo"Tứ giác là hình vuông";
+if( isset($_GET['a']) && isset($_GET['b']) && isset($_GET['c']) ){ 
+    $a = (float) $_GET["a"];
+   $c = (float) $_GET["b"];
+   $b = (float) $_GET["c"];
+if ($a == 0){
+    echo "Phương trình không phải là phương trình bậc 2.";
+} else {
+    $delta = pow($b, 2) - 4 * $a * $c;
+    if ($a == 0 && $delta == 0){
+        echo "Phương trình có một nghiệm kép là: x = 0";
+    } elseif ($a == 0){
+        echo "Phương trình vô nghiệm";
+    } else {
+        if ($delta > 0) {
+            $x1 = (-$b + sqrt($delta)) / (2 * $a);
+            $x2 = (-$b - sqrt($delta)) / (2 * $a);
+            echo "Phương trình có hai nghiệm phân biệt là: x1 = $x1 và x2 = $x2";
+        } elseif ($delta == 0) {
+            $x = -$b / (2 * $a);
+            echo "Phương trình có một nghiệm kép là: x = $x";
+        } else {
+            echo "Phương trình vô nghiệm";
+        }
     }
-    else
-    echo"Tứ giác là hình chữ nhật";
+}
 }
 
-    ?>
+?>
 </body>
 </html>
