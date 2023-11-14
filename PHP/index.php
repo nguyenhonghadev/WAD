@@ -1,22 +1,25 @@
-<?php
 
-// Kiểm tra xem phương thức yêu cầu là POST hay không
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-
-    // Lấy các thông tin đăng ký form "form.html"
-    $hoTen = $_POST["hoTen"];
-    $PW = $_POST["PW"];
-    $email = $_POST["email"];
-    $Sdt = $_POST["Sdt"];
-
-    //hiển thị thông tin thông tin đăng ký
-    echo "Tên người dùng: " . $hoTen;
-    echo "<br>";
-    echo "Mật khẩu: " . $PW;
-    echo "<br>";
-    echo "Email: " . $email;
-    echo "<br>";
-    echo "Số điện thoại: " . $Sdt;
-}
-
-?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOOLEANS</title>
+</head>
+<body>
+    <?php 
+    $T = TRUE;
+    $F = FALSE;
+    echo "T = $T <br>";
+    echo "F= $F <br>";
+    $check1 = 10>5;
+    $check2 = 20<10;
+    $check3 = $check1 && $check2;
+    $check4 = $check1 || $check2;
+    echo " Check1 = $check1 <br>";
+    echo " Check2 = $check2 <br>";
+    echo " Check3 = $check3 <br>";
+    echo " Check4 = $check4 <br>";
+    ?>
+    </body>
+    </html>
