@@ -6,33 +6,14 @@
     </head>
     <body>
         <?php
-        $USD = 23000;
-        $AUD = 17000;
-        $JPY = 200;
-        $EUR = 27000;
-        $VND = $_GET['vnd'];  
-       echo "<h1>Quy Đổi tiền </h1>";
-        if ($_GET['ngoaite'] == "USD") {
-            echo "$VND USD =";
-            echo $VND*$USD ;
-            echo "VNĐ";
-        }
-        if ($_GET['ngoaite'] == "AUD") {
-            echo "$VND AUD =";
-            echo $VND*$AUD ;
-            echo "VNĐ";
-        }
-        if ($_GET['ngoaite'] == "JPY") {
-            echo "$VND JPY =";
-            echo $VND*$JPY ;
-            echo "VNĐ";
-        }
-        if ($_GET['ngoaite'] == "EUR") {
-            echo "$VND EUR =";
-            echo $VND*$EUR ;
-            echo "VNĐ";
-        }
-
+   $tongdiem = $_GET["toan"] + $_GET["ly"] + $_GET["hoa"];
+   if($tongdiem<17) echo"diem cua ban khong du dau cac nganh ";
+   else
+   echo "diem cua ban lon hơn diem chuan cac nganh sau :<br> ";
+   if($tongdiem>=15) echo "Moi truong<br> ";
+   if($tongdiem>=17) echo "Dia chat<br> ";
+   if($tongdiem>=18) echo "CNTT<br> KHDL <br>";
+   if($tongdiem>=22) echo "CNTT chat luong cao<br>";
 
         ?>
     </body>

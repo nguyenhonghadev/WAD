@@ -5,17 +5,14 @@
         <title></title>
     </head>
     <body>
-        <h2>Currency exchange</h2>
+        <h2>Diem chuan</h2>
         <form action="code.php" method="get">
-            <p>Amount:</p>
-            <input type="number" name="1"><br>
-            <p>Select currency:</p>
-            <select name="ngoaite">
-                <option value="USD">USD</option>
-                <option value="AUD">AUD</option>
-                <option value="JPY">JPY</option>
-                <option value="EUR">EUR</option>
-            </select>
+            <p>Nhap diem toan</p>
+            <input type="number" name="toan"><br>
+            <p>Nhap diem ly</p>
+            <input type="number" name="ly"><br>
+            <p>Nhap diem hoa</p>
+            <input type="number" name="hoa"><br><br>
             <input type="submit" value="Convert">
         </form>
     </body>
