@@ -5,13 +5,18 @@
         <title></title>
     </head>
     <body>
-        <h3>QUIT THE GAME?</h3>
+        <h2>Currency exchange</h2>
         <form action="code.php" method="get">
-            <select name="response">
-                <option value="yes">YES</option>
-                <option value="no">NO</option>
+            <p>Amount:</p>
+            <input type="number" name="1"><br>
+            <p>Select currency:</p>
+            <select name="ngoaite">
+                <option value="USD">USD</option>
+                <option value="AUD">AUD</option>
+                <option value="JPY">JPY</option>
+                <option value="EUR">EUR</option>
             </select>
-            <input type="submit" value="Submit">
+            <input type="submit" value="Convert">
         </form>
     </body>
 </html>

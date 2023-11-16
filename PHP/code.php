@@ -6,15 +6,34 @@
     </head>
     <body>
         <?php
-            echo "THE GAME ";
-            if ($_GET["response"] == "yes")
-            {
-                echo "HAS BEEN QUITED";
-            }
-            else {
-                echo "WILL BE COUNTINUED IN 3 SECOND";
-            }
-            echo "<br>AFTER IF STATEMENT";
+        $USD = 23000;
+        $AUD = 17000;
+        $JPY = 200;
+        $EUR = 27000;
+        $VND = $_GET['vnd'];  
+       echo "<h1>Quy Đổi tiền </h1>";
+        if ($_GET['ngoaite'] == "USD") {
+            echo "$VND USD =";
+            echo $VND*$USD ;
+            echo "VNĐ";
+        }
+        if ($_GET['ngoaite'] == "AUD") {
+            echo "$VND AUD =";
+            echo $VND*$AUD ;
+            echo "VNĐ";
+        }
+        if ($_GET['ngoaite'] == "JPY") {
+            echo "$VND JPY =";
+            echo $VND*$JPY ;
+            echo "VNĐ";
+        }
+        if ($_GET['ngoaite'] == "EUR") {
+            echo "$VND EUR =";
+            echo $VND*$EUR ;
+            echo "VNĐ";
+        }
+
+
         ?>
     </body>
 </html>
