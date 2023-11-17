@@ -5,18 +5,18 @@
         <title></title>
     </head>
     <body>
-        <h2>Giới tính </h2>
-        <form action="code.php" method="post">
-            <p> chọn giới tính của bạn<p>
-            <select id="gioitinh" name="gioitinh">
-                <option value="nam">Nam</option>
-                <option value="nu">Nữ</option>
-            </select><br>
-            <label for="chieucao">Chiều cao (cm): </label>
-            <input type="number" name="cao"><br>
-            <label for="cannang">Cân nặng (kg): </label>
-            <input type="number" name="nang"><br>           
-            <input type="submit" value="xác nhận">
+        <h2>tiền tệ</h2>
+        <form action="code.php" method="get">
+            <p>Amount:</p>
+            <input type="number" name="tien"><br>
+            <p>Select currency:</p>
+            <select name="ngoaite">
+                <option value="USD">USD</option>
+                <option value="AUD">AUD</option>
+                <option value="JPY">JPY</option>
+                <option value="EUR">EUR</option>
+            </select>
+            <input type="submit" value="Convert">
         </form>
     </body>
 </html>

@@ -6,13 +6,29 @@
     </head>
     <body>
         <?php
-            $ccao = $_POST["cao"];
-            $cnang = $_POST["nang"];
-            $Gioitinh = $_POST["gioitinh"];
-        if($Gioitinh=="nam" && $ccao>160 && $cnang>50) echo "Dat yeu cau";
-        elseif ($Gioitinh=="nu" && $ccao>150 && $cnang>50 && $cnang<70) echo "Dat yeu cau";
-       else echo "khong dạt yeu cau";
+        echo "<p> Tiền của bạn được quy đổi là </p>";
+       $ngoaite = $_GET["ngoaite"];
+       $tien = $_GET["tien"];
+       echo "$tien "; echo "$ngoaite =";
+       $USD = 23000;
+        $AUD = 17000;
+        $JPY = 200;
+        $EUR = 27000;
+        switch ($ngoaite)
+        {
+            case "USD" : echo $tien * $USD;
+            break;
 
+            case "AUD" : echo $tien * $AUD;
+            break;
+        
+            case "JPY" : echo $tien * $JPY;
+            break;
+
+            case "EUR" : echo $tien * $EUR;
+            break;
+        }
+        echo" Việt nam đồng";
         ?>
     </body>
 </html>
