@@ -6,19 +6,11 @@
     </head>
     <body>
         <?php
-        echo"<h3>Mệnh giá tiền</h3>";
-       $giatri = array(22300,27300,1700,120);
-       $giatri[]= 600;
-       $giatri[]= 1600;
-       $giatri[0]= 22200;
-       
-       echo "USD $giatri[0] <br>";
-       echo "EUR $giatri[1] <br>";
-       echo "SGD $giatri[2] <br>";
-       echo "JPY $giatri[3] <br>";
-       echo "CHN $giatri[4] <br>";
-       echo "AUD $giatri[5] <br>";
-      
+  echo "<h1> Quy đổi tiền tệ </h1>";      
+  $ngoaite = $_GET['ngoaite'];
+  $tien = $_GET['tien'];
+  $doitien = array ("USD"=>22300, "EUR"=>27300, "SGD"=>1700, "JPY"=>120);
+  echo $tien ." ". $ngoaite ." "."=" . number_format($tien*$doitien[$ngoaite]). " "."Việt nam đồng";
         ?>
     </body>
 </html>
