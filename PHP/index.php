@@ -5,16 +5,16 @@
         <title></title>
     </head>
     <body>
-        <h2>Diem chuan</h2>
+        <h2>Giới tính </h2>
         <form action="code.php" method="post">
             <p> chọn giới tính của bạn<p>
-            <select name="gioitinh">
-                <option name="nam">Nam</option>
-                <option name="nu">Nữ</option>
+            <select id="gioitinh" name="gioitinh">
+                <option value="nam">Nam</option>
+                <option value="nu">Nữ</option>
             </select><br>
-            <label for="chieucao">Chiều cao: </label>
+            <label for="chieucao">Chiều cao (cm): </label>
             <input type="number" name="cao"><br>
-            <label for="cannang">Cân nặng: </label>
+            <label for="cannang">Cân nặng (kg): </label>
             <input type="number" name="nang"><br>           
             <input type="submit" value="xác nhận">
         </form>
