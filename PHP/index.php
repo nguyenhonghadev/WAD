@@ -5,18 +5,29 @@
         <title></title>
     </head>
     <body>
-        <h2>tiền tệ</h2>
-        <form action="code.php" method="get">
-            <p>Amount:</p>
-            <input type="number" name="tien"><br>
-            <p>Select currency:</p>
-            <select name="ngoaite">
-                <option value="USD">USD</option>
-                <option value="AUD">AUD</option>
-                <option value="JPY">JPY</option>
-                <option value="EUR">EUR</option>
-            </select>
-            <input type="submit" value="Convert">
-        </form>
+        <h2>Vui lòng nhập điểm của bạn </h2>
+        <form action="code.php" method="post">
+
+  <p><label for="toan">Điểm toán:</label>
+  <input type="number" name="toan" id="toan" required min="0" max="10"></p>
+
+  <p><label for="toan">Điểm lý:</label>
+  <input type="number" name="ly" id="ly" required min="0" max="10"></p>
+
+  <p><label for="toan">Điểm hóa:</label>
+  <input type="number" name="hoa" id="hoa" required min="0" max="10"></p>
+
+  <p><label for="toan">Điểm tiếng anh:</label>
+  <input type="number" name="anh" id="ta" required min="0" max="10"></p>
+
+  <p><label for="toan">Điểm văn:</label>
+  <input type="number" name="van" id="van" required min="0" max="10"></p>
+
+  <p><label for="toan">Điểm sử:</label>
+  <input type="number" name="su" id="van" required min="0" max="10"></p>
+
+  <input type="submit" value="Gửi">
+</form>
+
     </body>
 </html>
