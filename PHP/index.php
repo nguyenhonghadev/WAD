@@ -10,7 +10,7 @@
 $x =1;
 while($x <=10) {
     echo"Dãy số là $x <br>";
-    $x ++;
+    
 }
 ?>
 </body>
