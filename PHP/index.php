@@ -7,11 +7,10 @@
 </head>
 <body>
     <?php
-$items = ["cau.png", "dao.png", "gang.png","kiem.png"];
-
-foreach ($items as $item) {
-  echo "<img src='$item' with = 50px height = 50px alt='$item'";
-
+$x =1;
+while($x <=10) {
+    echo"Dãy số là $x <br>";
+    $x ++;
 }
 ?>
 </body>
