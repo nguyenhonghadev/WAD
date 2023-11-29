@@ -2,52 +2,25 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Chọn ngày tháng năm</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>function</title>
 </head>
 <body>
-  <h2>Chọn ngày tháng năm</h2>
-  <form action="code.php" method="post">
   <?php
- 
-  // lấy năm hiện tại 
-   $today = getdate();
-   $curYear = $today["year"];
-   //********************************** */
-   $days = [];
-   for ($i = 1; $i <= 31; $i++) {
-     $days[] = $i;
-   }
+  $items = array ('item1.png','item2.png','item3.png', 'item4.png');
+  foreach ($items as $item) {
+    echo "<img src='images/$item' width=50px height=50px alt='$item'>";
+}
 
-   $months = ["Tháng 1", "Tháng 2", "Tháng 3", "Tháng 4", "Tháng 5", "Tháng 6", "Tháng 7", "Tháng 8", "Tháng 9", "Tháng 10", "Tháng 11", "Tháng 12"];
-
-   $years = [];
-   for ($i = 1900; $i <= $curYear; $i++) {
-     $years[] = $i;
-   }
-
-   echo "Ngày: ";
-   echo "<select name='day'>";
-   foreach ($days as $day) {
-     echo "<option value='$day'>$day</option>";
-   }
-   echo "</select>";
-
-   echo "Tháng: ";
-   echo "<select name='month'>";
-   foreach ($months as $month) {
-     echo "<option value='$month'>$month</option>";
-   }
-   echo "</select>";
-    
-    echo"Năm ";
-    echo "<select name='year'>";
-    foreach ($years as $year) {
-      echo "<option value='$year'>$year</option>";
-    }
-    echo "</select>";
-
-   
   ?>
-  <input type='submit' value='Chọn'>
+  <h1>Function<h1>
+
+  <?php
+  $items = array ("item5.png","item6.png");
+  foreach ($items as $item)
+  {
+    echo ("<img src ='images/$item' with = 50px height = 50px alt = '$item'>");
+  }
+   ?>
 </body>
 </html>
