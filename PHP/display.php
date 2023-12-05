@@ -15,7 +15,7 @@
     if ($result->num_rows > 0) 
     { while ($row = $result->fetch_assoc())
         { echo "FlightID : ".$row["id"].
-               "Origin :" .$row["origin"].
+               "Oringin :" .$row["oringin"].
                "Destination".$row["destination"].
                "Duration".$row["duration"]."<br>";
         }
