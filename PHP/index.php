@@ -12,18 +12,13 @@
     mysqli_set_charset($conn, 'UTF-8');
     $sql = "SELECT * FROM flights";
     $result = $conn->query($sql);
-    if ($result->num_rows > 0) 
-    { while ($row = $result->fetch_assoc())
-        { echo "FlightID : ".$row["id"].
-               "Origin :" .$row["origin"].
-               "Destination".$row["destination"].
-               "Duration".$row["duration"]."<br>";
-        }
-    }
-    else {
-        echo "không có chuyến bay";
-    }
-    $conn -> close(); 
+   $row = $result ->fetch_assoc();
+   echo"<br>"; 
+   print_r($row);
+   $row = $result ->fetch_assoc(); 
+   echo "<br>"; 
+   print_r($row);   
+   $conn ->close();
     ?>
 
 </body>
